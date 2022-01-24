@@ -1,0 +1,206 @@
+/* maquetación de css index css */
+
+.btn{
+    display: flex;
+}
+button{
+    border: none;
+    cursor: pointer;
+    font-size: 23px;
+    background-color: transparent;    
+  }
+
+ 
+.container{
+    padding: 15px;
+    margin: 0 auto;
+  }
+  
+@media (min-width: 992px) {
+    .app{
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+
+
+/* maquetación de css UsersForm */
+
+.user-form{
+    width: 100%;
+    background: #fff;
+    padding: 15px 0 35px;
+    margin: 0 auto;
+}
+
+.user-form form{
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.user-form h2{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+
+.user-form input{
+    margin: 10px 10px 0 0;
+    width: 100%;
+    outline: none;
+}
+
+.user-form .input{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.user-form .input input, .user-form .input select{
+    background: rgba(0, 0, 0, .03);
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+    outline: none;
+}
+
+.user-form .input label{
+    padding-right: 10px;
+    width: 10%;
+    text-align: center;
+}
+
+.user-form .input label i{
+    font-size: 20px;
+}
+
+.buttons-container{
+    width: 100%;
+    display: flex;
+}
+
+.user-form .button-submit{
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background: #fc008a;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+}
+
+.user-form .button-cancel{
+    margin: 15px 0 0 10px;
+    width: 92%;
+    padding: 10px;
+    font-size: 20px;
+    background: #e6e6e6;
+    border-radius: 10px;
+}
+
+
+
+@media (min-width: 576px) {
+    .user-form {
+        display: flex;        
+    }
+    .user-form form{
+        max-width: 579px;
+        /* height: 150vh; */
+    }
+}
+
+@media (min-width: 768px) {
+    .user-form form {
+         max-width: 721px;
+         /* position: fixed; */
+         background-color: white;
+     }
+}
+
+@media (min-width: 992px) {
+    .user-form{
+        background-color: white;
+        overflow-x: auto;
+        width: 40%;
+    }
+    .user-form form{
+        padding: 50px;
+        position: fixed;
+    }
+}
+
+
+/* maquetación de css UsersList */
+
+
+.users-list-container{
+    padding: 10px;   
+    margin: 0 auto;
+}
+
+.users-list .user-item{
+    width: 95%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 30px 0;
+    display: flex;
+}
+
+.users-list .user-item .user-info{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.users-list .user-item .user-info .name{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.users-list .user-item .user-info .email{
+    color: rgba(0, 0, 0, .6);
+    margin-bottom: 10px;
+}
+
+.users-list .user .btn{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.users-list .user .btn button{
+    margin: 0 10px;
+    background: #fff;
+}
+
+.users-list .user .btn button i{
+    font-size: 20px;
+    color: rgba(0, 0, 0, .8);
+}
+
+
+@media (min-width: 992px) {
+    .users-list{
+        width: 60%;
+        padding: 30px;
+        /* overflow-x: auto; */
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .users-list{
+        margin-left: -20px;
+        margin-right: 20px;
+    }
+  }
+
